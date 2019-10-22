@@ -1,5 +1,8 @@
-.idea/
-target/
-work/
-*.iml
-src/main/webapp
+/*.iml
+/.classpath
+/.idea/
+/.project
+/.settings/
+/target/
+/work/
+/src/main/webapp/

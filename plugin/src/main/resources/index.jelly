@@ -1,7 +1,4 @@
-<!--
-  This view is used to render the installed plugins page.
--->
 <?jelly escape-by-default='true'?>
 <div>
-  Changes Jenkins theme to Material Design Theme.
+    This plugin customizes Jenkins look and feel for Bonita Continuous Delivery.
 </div>
