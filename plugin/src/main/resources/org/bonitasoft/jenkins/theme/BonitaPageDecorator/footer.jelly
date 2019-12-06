@@ -2,6 +2,6 @@
 <j:jelly xmlns:j="jelly:core">
   <div class="bonita_doc">
     <span>© Bonitasoft, S.A. All rights reserved. | </span>
-    <a href='https://documentation.bonitasoft.com'>Bonitasoft Documentation</a>
+    <a href='https://documentation.bonitasoft.com/cloud/latest/'>Bonita Cloud Documentation</a>
   </div>
 </j:jelly>
