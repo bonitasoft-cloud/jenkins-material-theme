@@ -2,26 +2,38 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  
+
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>3.50</version>
+    <version>4.7</version>
     <relativePath/>
   </parent>
-  
+
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>bonita-jenkins-theme</artifactId>
   <version>0.1.${revision}</version>
   <packaging>hpi</packaging>
-  
+
   <properties>
     <revision>0-SNAPSHOT</revision>
-    <jenkins.version>2.176.4</jenkins.version>
+    <jenkins.version>2.235.5</jenkins.version>
     <java.level>8</java.level>
   </properties>
-  
+
   <name>Bonita Jenkins Theme Plugin</name>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.jenkins.tools.bom</groupId>
+        <artifactId>bom-2.235.x</artifactId>
+        <version>11</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <plugins>
@@ -50,7 +62,7 @@
         </executions>
       </plugin>
     </plugins>
-    
+
     <pluginManagement>
     	<plugins>
     		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
@@ -93,7 +105,7 @@
       <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
-  
+
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>

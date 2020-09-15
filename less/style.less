@@ -42,7 +42,6 @@ a, a:hover, a:visited, a:link {
   }
 
   .logo {
-    padding-top: 6px;
     margin-left: 8px;
   }
 
@@ -51,6 +50,23 @@ a, a:hover, a:visited, a:link {
     background-size: 392px;
     padding-left: 400px;
     height: 40px;
+  }
+
+  #searchform {
+    #search-box {
+      text-transform: uppercase;
+    }
+
+    .main-search__icon-trailing {
+      display: none;
+    }
+
+    .main-search__input {
+      padding-top: 0.25rem;
+      padding-right: 0.25rem;
+      padding-bottom: 0.25rem;
+      padding-left: 2.5rem;
+    }
   }
 
   .login {
@@ -63,17 +79,10 @@ a, a:hover, a:visited, a:link {
     font-weight: bold;
 
     a, a:visited {
-      color: #0A4561;
-    }
-
-    b {
       font-size: 15px;
       color: #E22936;
+      background-color: transparent;
     }
-  }
-
-  .searchbox {
-    padding: 10px 10px;
   }
 }
 
@@ -81,29 +90,35 @@ a, a:hover, a:visited, a:link {
   line-height: 51px !important;
 }
 
-#search-box {
-  height: 32px;
-  background: white;
-  padding-left: 8px;
-  text-transform: uppercase;
+#breadcrumbBar .top-sticker-inner {
+  overflow: hidden;
+  height: 0;
 }
 
-#breadcrumbBar #breadcrumbs, #right-top-nav {
-  display: none;
-}
-
-footer {
+footer.page-footer {
   background: #424242;
   border: none;
   color: #fff;
+  font-size: 13px;
 
-  span.page_generated, span.rest_api, span.jenkins_ver {
+  .page-footer__generated, div.rest_api, div.jenkins_ver {
     display: none;
   }
 
-  div.bonita_doc a {
-    margin-left: 5px;
-    color: #fff;
+  .page-footer__flex-row {
+    min-height: 0;
+    height: 0;
+  }
+
+  div.bonita_doc {
+    text-align: right;
+    padding: 10px;
+
+    a {
+      margin-left: 5px;
+      color: #fff;
+      font-weight: normal;
+    }
   }
 }
 
